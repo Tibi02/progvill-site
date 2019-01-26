@@ -1,7 +1,7 @@
 node('master') {
   stage('Git checkout') {
     ansiColor('xterm') {
-      checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[url: 'git@bitbucket.org:oktibor/progvill.hu.git']]])
+      checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[url: 'git@github.com:Tibi02/progvill-site.git']]])
     }
   }
   
